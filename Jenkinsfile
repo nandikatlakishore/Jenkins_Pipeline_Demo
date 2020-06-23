@@ -6,6 +6,8 @@ pipeline {
             steps {
                 withMaven(maven : 'apache-maven-3.6.1') {
                     sh 'mvn clean compile'
+                    echo 'compilation stage successful'
+       
                 }
             }
         }
